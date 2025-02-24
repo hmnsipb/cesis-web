@@ -1,0 +1,540 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  
+}
+
+.navbar-collapse.show {
+  display: block;
+  animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 500px;
+  }
+}
+
+#banner {
+  position: relative;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  
+}
+
+.image-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner-subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.text-center button{
+  padding: 10px 20px;
+  font-size: 15;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.indicators .dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.indicators .dot.active {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  #banner{
+    height: 50vh;
+  }
+  .slide{
+    background-size: 175%;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 2rem;
+  }
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+}
+
+.services h5{
+  justify-items: center;
+  text-align: center;
+  margin: 5%;
+  font-family: Merriweather;
+}
+
+.services-nav{
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.services-nav li{
+  display: inline;
+  text-align: center;
+  margin: 0px 20px 0px 20px;
+}
+
+.services-nav a{
+  color: black;
+  text-decoration: none;
+}
+
+.services-nav a:hover{
+  color: #69d2e7;
+}
+
+@media (max-width: 768px) {
+  .services h5{
+    font-size: 15px;
+  }
+  .services-nav{
+    margin-bottom: 25px;
+  }
+}
+
+.our{
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.our-content{
+  padding-left: 25px;
+}
+
+.our:hover .our-content h3{
+  color: #69d2e7;
+}
+
+.our-image{
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 300px;
+  display: flex;
+  justify-content: center;
+  padding: 37px 39px;
+}
+
+.our:hover .our-image{
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .our{
+    padding: 25px;
+  }
+}
+
+.mockup-main{
+  color: white;
+}
+
+.mockup-text{
+  padding: 200px 100px;
+}
+
+.mockup-text p{
+  color: grey;
+}
+
+.typography{
+  display: flex;
+}
+
+.mockup-image{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  padding: 13px;
+}
+
+.image-text{
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .mockup-text{
+    padding: 25px;
+  }
+}
+
+.recent{
+  height: 75px;
+  background-color: #6155fc;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.recent img{
+  width: 25px;
+  height: 25px;
+}
+
+.recent p{
+  padding-left: 13px;
+  padding-top: 13px;
+}
+
+.brands{
+  text-align: center;
+  padding-top: 100px;
+}
+
+.brands p{
+  padding-bottom: 75px;
+  color: grey;
+}
+
+.brand-logo {
+  text-align: center;
+  margin-bottom: 20px;
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
+
+.brand-logo img {
+  max-width: 100px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.brand-logo img:hover {
+  filter: invert(41%) sepia(86%) saturate(2623%) hue-rotate(166deg) brightness(101%) contrast(101%);
+}
+
+.people{
+  margin-top: 100px;
+ }
+
+.people-image img{
+  position: absolute;
+}
+
+.people-content{
+  position: relative;
+  height: 85vh;
+  padding: 50px;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.video-section video{
+  height: 85vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .people-image img{
+    width: 100%;
+    height: 50vh;
+  }
+  .people-content{
+    height: 50vh;
+    width: 100%;
+    padding-top: 50px;
+  }
+  .video-section video{
+    height: 50vh;
+  }
+}
+
+.cesis-plans{
+  text-align: center;
+  padding-top: 100px;
+}
+
+.plans-content .container{
+  padding-top: 100px;
+  border: 1px solid grey;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+
+.plans-content h3{
+  padding-top: 50px;
+  font-weight: bolder;
+}
+
+.dollars{
+  display: flex;
+  justify-content: center;
+  color: #6155fc;
+}
+
+.plans-content img{
+  height: 117px;
+}
+
+.plans-content button{
+  border: 1.5px solid black; 
+  color: black;
+  margin: 25px;
+  margin-bottom: 50px;
+}
+
+.plans-content button:hover{
+  color: white;
+  background-color:#6155fc;
+  border: 1.5px solid transparent;
+}
+
+.improve img{
+  position: absolute;
+  width: 100%; 
+  height: 89vh;
+}
+
+.design-content{
+  
+  width: 100%;
+  height: 89vh;
+  position: relative;
+  padding: 50px 100px 0px 100px;
+  color: white;
+}
+
+.top-button{
+  margin-bottom: 200px; 
+  margin-left: -50px; 
+  font-weight: bold;
+}
+
+.blog img{
+  
+  width: 100%;
+  height: 49vh;
+  position: absolute;
+}
+
+.top-blog{
+  width: 100%;
+  height: 49vh;
+  position: relative;
+  color: white;
+  padding: 200px 100px 0px 100px;
+}
+
+.blog-content{
+  width: 100%;
+  height: 40vh;
+  padding: 50px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.blog-content button:hover{
+  background-color: #2a2d2e;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .improve img{
+    width: 100%;
+    height: 50vh;
+  }
+  .design-content{
+    height: 50vh;
+    padding: 25px 33px;
+  }
+  .top-button{
+    margin-bottom: 20px;
+    margin-left: -25px; 
+    font-weight: bold;
+  }
+  .blog img{
+    width: 100%;
+  }
+  .blog-content{
+    width: 100%;
+  }
+}
+
+.contact{
+  clear: both;
+}
+
+.contact img{
+  height: 85vh;
+  width: 100%;
+  position: absolute;
+}
+
+.contact-content{
+  position: relative;
+  height: 85vh;
+  width: 100%;
+  text-align: center;
+  padding: 100px 300px;
+}
+
+input{
+  background-color: transparent;
+  border: 1px solid grey;
+  width: 100%;
+  height: 5vh;
+  padding: 13px;
+  margin-top: 13px;
+  color: white;
+}
+
+.contact-content button{
+  padding: 11px 182.3px;
+  border: none;
+  background: #69d2e7;
+  background-image: linear-gradient(to right, #69d2e7, #6155fc);
+  color: white;
+  margin: 13px;
+}
+
+@media (max-width: 1198px) {
+  .contact-content{
+    padding: 100px 0px;
+  }
+  }
+
+@media (max-width: 768px) {
+.contact-content{
+  padding: 100px 0px;
+}
+}
+
+.footer {
+  background-color: #fff;
+  padding: 40px 0;
+  border-top: 1px solid #ddd;
+}
+
+.newsletter p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.newsletter-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.newsletter-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+  width: 80%;
+}
+
+.newsletter-input button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-links {
+  margin: 20px 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.copyright {
+  font-size: 12px;
+  color: gray;
+}
+
+.social-icons a {
+  color: black;
+  margin: 0 5px;
+  font-size: 16px;
+}

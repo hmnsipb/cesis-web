@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Product Demos</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #000;
+}
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #000;
+  margin-right: 10px;
+}
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .demo-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .demo-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .demo-video iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 5px;
+        }
+
+        .demo-info {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .demo-card {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+
+        .demo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">cesis.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="demos.html">Demos</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact us.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Product Demos</h1>
+
+        <section class="demo-section">
+            <h2>Demo 1: Product Overview</h2>
+            <div class="demo-info">
+                <div class="demo-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Product Image 1">
+                    <h3>Awesome Product</h3>
+                    <p>See how our product works and what it can do for you. Watch the demo video below.</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Watch Demo</a>
+                </div>
+                <div class="demo-video">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Demo 2: Interactive Service</h2>
+            <div class="demo-info">
+                <div class="demo-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Service Image 2">
+                    <h3>Try Our Interactive Service</h3>
+                    <p>Get hands-on with our demo service. Click below to try it out yourself!</p>
+                    <a href="/interactive-demo" target="_blank">Start Demo</a>
+                </div>
+                <div class="demo-video">
+                    <iframe src="https://www.youtube.com/embed/kl3pzeRgm0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Demo 3: Product Features</h2>
+            <div class="demo-info">
+                <div class="demo-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Feature Image 3">
+                    <h3>Key Features</h3>
+                    <p>Explore the key features of our product in action. See how it can improve your life.</p>
+                    <a href="https://www.youtube.com/watch?v=O6gQ7V84bJ8" target="_blank">View Demo</a>
+                </div>
+                <div class="demo-video">
+                    <iframe src="https://www.youtube.com/embed/O6gQ7V84bJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
